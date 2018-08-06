@@ -29,35 +29,35 @@ defmodule RotationalCipherTest do
     assert RotationalCipher.rotate(plaintext, shift) == "a"
   end
 
-  @tag :pending
+  # @tag :pending
   test "rotate m by 13" do
     plaintext = "m"
     shift = 13
     assert RotationalCipher.rotate(plaintext, shift) == "z"
   end
 
-  @tag :pending
+  # @tag :pending
   test "rotate n by 13 with wrap around alphabet" do
     plaintext = "n"
     shift = 13
     assert RotationalCipher.rotate(plaintext, shift) == "a"
   end
 
-  @tag :pending
+  # @tag :pending
   test "rotate capital letters" do
     plaintext = "OMG"
     shift = 5
     assert RotationalCipher.rotate(plaintext, shift) == "TRL"
   end
 
-  @tag :pending
+  # @tag :pending
   test "rotate spaces" do
     plaintext = "O M G"
     shift = 5
     assert RotationalCipher.rotate(plaintext, shift) == "T R L"
   end
 
-  @tag :pending
+  # @tag :pending
   test "rotate numbers" do
     plaintext = "Testing 1 2 3 testing"
     shift = 4
@@ -71,7 +71,7 @@ defmodule RotationalCipherTest do
     assert RotationalCipher.rotate(plaintext, shift) == "Gzo'n zvo, Bmviyhv!"
   end
 
-  @tag :pending
+  # @tag :pending
   test "rotate all letters" do
     plaintext = "The quick brown fox jumps over the lazy dog."
     shift = 13

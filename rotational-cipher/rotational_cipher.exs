@@ -21,6 +21,8 @@ defmodule RotationalCipher do
   defp change_char(char, shift) when char in ?A..?Z,
     do: change_char_with_base(char, shift, ?Z)
 
+  defp change_char(char, _), do: chars
+
   defp change_char_with_base(char, shift, base),
     do: base + rem(char + shift - base, 26)
 end
