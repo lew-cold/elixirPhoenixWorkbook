@@ -71,7 +71,7 @@ defmodule RotationalCipherTest do
     assert RotationalCipher.rotate(plaintext, shift) == "Gzo'n zvo, Bmviyhv!"
   end
 
-  # @tag :pending
+  @tag :pending
   test "rotate all letters" do
     plaintext = "The quick brown fox jumps over the lazy dog."
     shift = 13
