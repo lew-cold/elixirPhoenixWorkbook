@@ -32,7 +32,7 @@ defmodule TwelveDays do
     # when starting_verse in 1..12 and ending_verse in 1..12 and ending_verse > starting_verse do
       list = for num <- starting_verse..ending_verse, do: Map.get(@verses, num) <> "\n"
       list
-        |> Enum.join
+        |> Enum.join("")
         |> String.trim
   end
 
